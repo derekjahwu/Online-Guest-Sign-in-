@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: sandybrown;
+    color:black;
+}
+
+.header-container{
+    background:skyblue;
+    display:grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+    align-items: center;
+    padding:7px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container .entry{
+    background:white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.5);
+    padding: 15px 5px;
+    width: 300px;
+    margin:50px;
+}
