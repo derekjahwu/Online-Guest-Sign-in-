@@ -11,88 +11,46 @@
         <div class="header-container">
             <h1>Guest List Website</h1>
             <a href="#"><h3>Home</h3></a>
-            <a href="#"><h3>Sign It!</h3></a>
+            <a class = "btn" onclick="signIt()"><h3>Sign It!</h3></a>
             <a href="#"><h3>About</h3></a>
         </div>
     </header>
     <div class="container">
-        <div class="entry">
-            <h2>From:</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, modi.</p>
-        </div>
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora minus possimus, soluta aliquid nesciunt fuga illum corporis hic vitae!</p>
-        </div>
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="closeWindow()">&times;</div>
+                        <div class="form-container">
+                                <form class="input-form">
 
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, modi.</p>
-        </div>
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora minus possimus, soluta aliquid nesciunt fuga illum corporis hic vitae!</p>
-        </div>
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, modi.</p>
-        </div>
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora minus possimus, soluta aliquid nesciunt fuga illum corporis hic vitae!</p>
-        </div>
+                                    <div class="entry-input">
+                                    <label for="name">From:</label>
+                                    <input id='name' placeholder='Full Name'>
+                                    </div>
 
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, modi.</p>
-        </div>
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora minus possimus, soluta aliquid nesciunt fuga illum corporis hic vitae!</p>
-        </div>
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, modi.</p>
-        </div>
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora minus possimus, soluta aliquid nesciunt fuga illum corporis hic vitae!</p>
-        </div>
+                                    <div class="entry-input">
+                                    <label for="message">Message:</label>
+                                    <textarea id='message' name='message' placeholder='Your Message'></textarea>
 
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, modi.</p>
-        </div>
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="entry">
-            <h2>Test</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora minus possimus, soluta aliquid nesciunt fuga illum corporis hic vitae!</p>
-        </div>
- 
+                                    <input class="submit-btn" type='submit' value='Submit' onclick="submitEntry()">
+
+                                </form>
+                            </div>
+                    </div>
+            </div>
+    </div>
+        <div id="entry-container">
+        <!-- <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+            <div class="close-btn">&times;</div>
+            <h1>From:</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, architecto.</p>
+            </div>
+        </div> -->
+
     </div>
     
 </body>
+<script src="app.js"></script>
 </html>

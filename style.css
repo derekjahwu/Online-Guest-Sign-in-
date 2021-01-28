@@ -8,6 +8,101 @@ body{
     color:black;
 }
 
+.header-container .btn{
+    cursor: pointer;
+}
+
+.error {
+    background:rgba(255, 0, 0, 0.5);
+    border:1px red solid;
+    color:white;
+    width:50%;
+    padding:10px;
+}
+
+.success {
+    background:rgba(0, 255, 0, 0.5);
+    border:1px green solid;
+    color:black;
+    width:50%;
+    padding:10px;
+}
+
+
+.popup .overlay{
+position:fixed;
+top:0;
+left:0;
+background: rgba(0,0,0,0.5);
+width:100%;
+height:100vh;
+z-index: 1;
+display:none;
+}
+
+.popup .content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:white;
+    width:450px;
+    z-index:2;
+    padding: 20px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.popup .close-btn{
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height: 30px;
+    background:#222;
+    color:#fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+    cursor: pointer;
+}
+
+.popup.active .overlay{
+    display:block;
+}
+
+.popup.active .content{
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+}
+
+.input-form input{
+    display:block;
+}
+
+.input-form input:focus,
+textarea:focus{
+    outline:none;
+}
+
+.form-container{
+    width:100%;
+    height:100%;
+}
+.input-form .entry-input{
+    margin: 10px;
+}
+
+.input-form #message{
+    width:100%;
+    height:200px;
+}
+
+
 .header-container{
     background:skyblue;
     display:grid;
@@ -21,6 +116,11 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+#entry-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .container .entry{
     background:white;
     border-radius: 10px;
@@ -29,3 +129,4 @@ body{
     width: 300px;
     margin:50px;
 }
+
